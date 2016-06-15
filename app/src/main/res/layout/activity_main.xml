@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.andexert.library.RippleView
+                android:id="@+id/app1"
+                style="@style/RippleViewStyle">
+
+                <TextView
+                    android:background="@color/app1"
+                    android:text="Popular Movies"
+                    style="@style/TextViewStyle"/>
+
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:id="@+id/app2"
+                style="@style/RippleViewStyle">
+
+                <TextView
+                    android:background="@color/app2"
+                    android:text="Stock Hawk"
+                    style="@style/TextViewStyle"/>
+
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:id="@+id/app3"
+                style="@style/RippleViewStyle">
+
+                <TextView
+                    android:background="@color/app3"
+                    android:text="Build it Bigger"
+                    style="@style/TextViewStyle"/>
+
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:id="@+id/app4"
+                style="@style/RippleViewStyle">
+
+                <TextView
+                    android:background="@color/app4"
+                    android:text="Make Your App Material"
+                    style="@style/TextViewStyle"/>
+
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:id="@+id/app5"
+                style="@style/RippleViewStyle">
+
+                <TextView
+                    android:background="@color/app5"
+                    android:text="Go Ubiquitous"
+                    style="@style/TextViewStyle"/>
+
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:id="@+id/app6"
+                style="@style/RippleViewStyle">
+
+                <TextView
+                    android:background="@color/app6"
+                    android:text="Capstone"
+                    style="@style/TextViewStyle"/>
+
+            </com.andexert.library.RippleView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
